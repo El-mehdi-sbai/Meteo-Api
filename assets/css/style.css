@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "poppins";
+  src: url("/assets/fonts/Poppins.ttf");
+}
+@font-face {
+  font-family: "dublin";
+  src: url("/assets/fonts/Dublin.ttf");
+}
+
+body {
+  background-image: linear-gradient(
+    to top,
+    #010914,
+    #081c27,
+    #012d37,
+    #003f44,
+    #00514b
+  );
+  height: 100vh;
+  font-family: "poppins";
+  position: relative;
+  margin: 0;
+}
+
+main {
+  position: fixed;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+input {
+    border: none;
+    padding: 20px;
+    width: 500px;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    text-align: center;
+    position: relative;
+    padding-right: 155px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.btnSubmit{
+    position: absolute;
+    color: #fff;
+    background: #00514b;
+    border-radius: 25px;
+    right: -71px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    transition: .3s;
+    text-transform: uppercase;
+    
+}
+.btnSubmit:hover{
+    background: #081c27;
+    transition: .3s;
+}
+
+.weatherCard{
+    position: absolute;
+    top: 150px;
+    border-radius: 20px;
+    width: 465px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    background: #012d37;
+    padding: 20px;
+    color: #fff;
+}
+
+#city{
+    font-size: 1.5rem;
+    font-family: dublin;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+#icon_url{
+    line-height: inherit!important;
+    vertical-align: middle;
+    width: 70px;
+}
+
+#textLat, #textLon{
+    font-family: 'poppins';
+}
+
+#temp{
+    font-family: "dublin";
+}
+
+.padding{
+    padding: 10px 0;
+    border: 1px solid #003f44;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.section_2_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 232.5px);
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+#dublin{
+    font-family: 'dublin';
+}
+.section_3_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 155px);
+    text-align: center;
+    align-items: center;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+#ventTitle{
+    display: flex;
+    justify-content: center;
+    font-family: 'dublin';
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: #003f44;
+    color: #aaa;
+}
+
+.centerFooter{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin: 25px;
+}
