@@ -103,6 +103,6 @@ function AjaxGet(url) {
         }
         
     });
-
+    
     request.send(null);
 }
